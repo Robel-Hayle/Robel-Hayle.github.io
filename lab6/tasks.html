@@ -12,28 +12,23 @@
  <span>Task list</span>
  </header>
  <main>
- <section id="taskCreation" class="not">
- <form>
+ <section id="taskCreation" class="not"> <form>
  <div>
- <label>Task</label>
- <input type="text" required="required"
+ <label>Task</label> <input type="text" required="required"
  name="task" class="large" placeholder="Breakfast at Tiffanys" />
  </div>
  <div>
- <label>Required by</label>
- <input type="date" required="required"
+ <label>Required by</label> <input type="date" required="required"
  name="requiredBy" />
  </div>
  <div>
- <label>Category</label>
- <select name="category">
+ <label>Category</label> <select name="category">
  <option value="Personal">Personal</option>
  <option value="Work">Work</option>
  </select>
  </div>
  <nav>
- <a href="#">Save task</a>
- <a href="#">Clear task</a>
+ <a href="#">Save task</a> <a href="#">Clear task</a>
  </nav>
  </form>
  </section>
@@ -71,34 +66,17 @@
  </table>
  <nav>
  <a href="#" id="btnAddTask">Add task</a>
- <button id="btnPrintObject">Print object to console</button>
- <button id="btnLoadObject">Load object into console</button>
  </nav>
  </section>
  </main>
  <footer>You have 3 tasks</footer>
 </body>
 <script>
- $('[required="required"]').prev('label').append('<span>*</span>').children('span').addClass('required');
+ $('[required="required"]').prev('label').append( '<span>*</span>').children( 'span').addClass('required');
  $('tbody tr:even').addClass('even');
  $('#btnAddTask').click(function(evt) {
  evt.preventDefault();
  $('#taskCreation').removeClass('not');
- });
-
- $('#btnPrintObject').click(function(evt) {
-   const taskObject = toObject();
-   console.log(JSON.stringify(taskObject, null, 2));
- });
-
- $('#btnLoadObject').click(function(evt) {
-   const sampleObject = {
-     task: 'Sample Task',
-     requiredBy: '2023-08-31',
-     category: 'Work'
-   };
-   
-   fromObject(sampleObject);
  });
 </script>
 </html>

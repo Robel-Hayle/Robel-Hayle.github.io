@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #tblTasks {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #tblTasks th,
+  #tblTasks td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #tblTasks th {
+    background-color: #f2f2f2;
+  }
+  
+  #tblTasks tbody tr.even {
+    background-color: #f2f2f2;
+  }
+  
+  nav {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  #btnAddTask,
+  #btnPrintObject,
+  #btnLoadObject {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ccc;
+  }
+  
