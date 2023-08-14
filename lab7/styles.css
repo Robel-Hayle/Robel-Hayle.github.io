@@ -19,6 +19,6 @@ body {
     border-radius: 50%;
     cursor: pointer;
     position: absolute;
+    transition: width 0.25s, height 0.25s;
   }
-  
   
